@@ -6,6 +6,19 @@
 -->
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+			// Check if the user is logged in
+			if (!localStorage.getItem('isLoggedIn')) {
+				// Redirect to the login page if not logged in
+				window.location.href = 'login.html';
+			}
+		</script>
+	</head>
+	<body>
 		<title>Health Forge</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -46,7 +59,7 @@
 							<header>
 								<h1>Empowering Doctors, Transforming Care: Welcome to the Future of Medicine. </h1>
 								<p>With Doctor Chat Bot, you will be able to predict need for ICU stays for your patients, schedule Appointments, get answers to any medical queries</p>
-								<p>access existing patient data, access the Meta hospital and view insightful dashboards. login</p>
+								<p>access existing patient data, access the Meta hospital and view insightful dashboards. test 2</p>
 							</header>
 							<section class="tiles">
 								<article class="style1">

@@ -1,146 +1,145 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home Page</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script>
-		// Check if the user is logged in
-		if (localStorage.getItem('isLoggedIn') !== 'true') {
-			// Redirect to the login page if not logged in
-			window.location.href = 'login.html';
-		}
-	</script>
-	<title>Health Forge</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<style>
-		body {
-			background-image: url('images/images.jpg'); /* Path to your background image */
-			background-size: cover; /* Ensure the background image covers the entire viewport */
-			background-position: center; /* Center the background image */
-			background-repeat: no-repeat; /* Prevent the background image from repeating */
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Check if the user is logged in
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            // Redirect to the login page if not logged in
+            window.location.href = 'login.html';
+        }
+    </script>
+    <title>Health Forge</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {
+            background-image: url('images/images.jpg'); /* Path to your background image */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+        }
+
+        /* Add style for profile button */
+        .profile-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="is-preload">
-	
-	<!-- Wrapper -->
-		<div id="wrapper">
+    
+    <!-- Wrapper -->
+        <div id="wrapper">
 
-			<!-- Header -->
-				<header id="header">
-					<div class="inner">
+            <!-- Header -->
+                <header id="header">
+                    <div class="inner">
 
-						<!-- Logo -->
-							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/logo2.png" alt="" /></span><span class="title">Health Forge</span>
-							</a>
+                        <!-- Logo -->
+                            <a href="index.html" class="logo">
+                                <span class="symbol"><img src="images/logo2.png" alt="" /></span><span class="title">Health Forge</span>
+                            </a>
 
-					</div>
-				</header>
+                        <!-- Profile Button -->
+                        <div class="profile-button" onclick="viewProfile()">
+                            Profile
+                        </div>
 
-			<!-- Main -->
-				<div id="main">
-					<div class="inner">
-						<header>
-							<h1>Empowering Doctors, Transforming Care: Welcome to the Future of Medicine. </h1>
-							<p>With Doctor Chat Bot, you will be able to predict need for ICU stays for your patients, schedule Appointments, get answers to any medical queries</p>
-							<p>access existing patient data, access the Meta hospital and view insightful dashboards. test 2</p>
-						</header>
-						<section class="tiles">
-							<article class="style1">
-								<span class="image">
-									<img src="images/pic01.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Access the chat bot</h2>
-									<div class="content">
-										<p>Using the chat bot, you will be able to predict mortality rates and ICU stays for your patients.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style2">
-								<span class="image">
-									<img src="images/pic02.jpg" alt="" />
-								</span>
-								<a href="https://www.spatial.io/s/miccuthemans-Lo-Fi-Scene-662b2cd7b3bd8b7727b01de2?share=8186157624944434813">
-									<h2>Visit the Meta Hospital </h2>
-									<div class="content">
-										<p>Visit the Meta world created to simulate hospitals</p>
-									</div>
-								</a>
-							</article>
-							<article class="style3">
-								<span class="image">
-									<img src="images/pic03.jpg" alt="" />
-								</span>
-								<a href="Visuals.html">
-									<h2>Visualizations</h2>
-									<div class="content">
-										<p>View visualizations of the patient data.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style4">
-								<span class="image">
-									<img src="images/pic04.jpg" alt="" />
-								</span>
-								<a href="Data.html">
-									<h2>Patient data</h2>
-									<div class="content">
-										<p>View past patient data</p>
-									</div>
-								</a>
-							</article>
-						</section>
-					</div>
-				</div>
+                    </div>
+                </header>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<section>
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send" class="primary" /></li>
-								</ul>
-							</form>
-						</section>
+            <!-- Main -->
+                <div id="main">
+                    <div class="inner">
+                        <header>
+                            <h1>Empowering Doctors, Transforming Care: Welcome to the Future of Medicine. </h1>
+                            <p>With Doctor Chat Bot, you will be able to predict need for ICU stays for your patients, schedule Appointments, get answers to any medical queries</p>
+                            <p>access existing patient data, access the Meta hospital and view insightful dashboards. test 2</p>
+                        </header>
+                        <section class="tiles">
+                            <article class="style1">
+                                <span class="image">
+                                    <img src="images/pic01.jpg" alt="" />
+                                </span>
+                                <a href="generic.html">
+                                    <h2>Access the chat bot</h2>
+                                    <div class="content">
+                                        <p>Using the chat bot, you will be able to predict mortality rates and ICU stays for your patients.</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="style2">
+                                <span class="image">
+                                    <img src="images/pic02.jpg" alt="" />
+                                </span>
+                                <a href="https://www.spatial.io/s/miccuthemans-Lo-Fi-Scene-662b2cd7b3bd8b7727b01de2?share=8186157624944434813">
+                                    <h2>Visit the Meta Hospital </h2>
+                                    <div class="content">
+                                        <p>Visit the Meta world created to simulate hospitals</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="style3">
+                                <span class="image">
+                                    <img src="images/pic03.jpg" alt="" />
+                                </span>
+                                <a href="Visuals.html">
+                                    <h2>Visualizations</h2>
+                                    <div class="content">
+                                        <p>View visualizations of the patient data.</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="style4">
+                                <span class="image">
+                                    <img src="images/pic04.jpg" alt="" />
+                                </span>
+                                <a href="Data.html">
+                                    <h2>Patient data</h2>
+                                    <div class="content">
+                                        <p>View past patient data</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </section>
+                    </div>
+                </div>
 
-						<ul class="copyright">
-							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
+            <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <section>
+                            <h2>Get in touch</h2>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field half">
+                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                    </div>
+                                    <div class="field half">
+                                        <input type="email" name="email" id="email" placeholder="Email" />
+                                    </div>
+                                    <div class="field">
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send" class="primary" /></li>
+                                </ul>
+                            </form>
+                        </section>
 
-		</div>
-
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-</body>
-</html>
+                        <ul class="copyright">
+                            <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </

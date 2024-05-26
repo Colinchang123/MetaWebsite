@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (validateLogin(doctorId, password)) {
                 localStorage.setItem('isLoggedIn', 'true');
+                localStorage.setItem('loggedInUser', doctorId); // Store the logged-in user's ID
                 window.location.href = 'index.html';
             } else {
                 alert('Invalid Doctor ID or Password');
@@ -18,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function validateLogin(doctorId, password) {
     const doctors = [
-        { id: 'Colin', password: 'colin' },
-        { id: 'Reshav', password: 'reshav' },
-        { id: 'Benya', password: 'benya' },
-        { id: 'Mikhael', password: 'mikhael' },
+        { id: 'doc1', password: 'password1' },
+        { id: 'doc2', password: 'password2' },
+        { id: 'doc3', password: 'password3' },
+        { id: 'doc4', password: 'password4' },
         { id: 'doc5', password: 'password5' }
     ];
     

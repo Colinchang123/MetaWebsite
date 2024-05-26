@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('password').value;
 
             if (validateLogin(doctorId, password)) {
-                localStorage.setItem('isLoggedIn', true);
+                localStorage.setItem('isLoggedIn', 'true');
                 window.location.href = 'index.html';
             } else {
                 alert('Invalid Doctor ID or Password');

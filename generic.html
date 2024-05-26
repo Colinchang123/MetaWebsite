@@ -87,4 +87,11 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+		// Check if the user is logged in
+		if (!localStorage.getItem('isLoggedIn')) {
+			// Redirect to the login page if not logged in
+			window.location.href = 'login.html';
+		}
+	</script>
 </html>
